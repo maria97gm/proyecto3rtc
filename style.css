@@ -48,50 +48,10 @@
   text-decoration: none;
 }
 
-header {
-  padding: var(--rtc-padding-s);
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
 
-header > nav > ul {
-  display: flex;
-  gap: var(--rtc-gap-m);
-  font-weight: 700;
-}
-
-header img {
-  height: 70px;
-  width: 70px;
-}
-
-header a {
-  color: var(--rtc-black);
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-input {
-  background-color: var(--rtc-gray);
-  width: 500px;
-  height: 40px;
-  padding: var(--rtc-padding-xs);
-  border-color: transparent;
-  border-radius: var(--rtc-br);
-}
-
-/* img {
-  width: 20%;
-  height: 20%;
-  border-radius: var(--rtc-br);
-} */
 
 #busqueda {
-  padding: var(--rtc-padding-s);
+  padding: var(--rtc-padding-l);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px; /* Espacio entre las imágenes */
@@ -107,3 +67,5 @@ input {
   box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.75);
   scale: 1.1;
 }
+
+

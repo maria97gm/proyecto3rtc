@@ -15,4 +15,3 @@ export const cargarImagenesAleatorias = async () => {
 
 cargarImagenesAleatorias()
 
-// document.addEventListener('DOMContentLoaded', cargarImagenesAleatorias);

@@ -1,4 +1,7 @@
 import { cargarImagenesAleatorias } from './src/Components/Main/main'
+import { arrayFooter } from './utils/arrayFooter'
+import { createFooter } from './src/Components/Footer/footer'
+import { createHeader } from './src/Components/Header/header'
 
 const accesKey = 'Bg7gJeqZ0d-Nlux2CMLwLDhIdO2Wqf0x-J6cDEmJM-4'
 
@@ -21,16 +24,27 @@ const busqueda = () => {
   input.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
       const textoBusqueda = input.value
-      realizarBusqueda(textoBusqueda)
+      const divImg = document.querySelector('#busqueda')
+      divImg.innerHTML = ''
+
+      if (textoBusqueda === '') {
+        const aviso = document.createElement('h3')
+        aviso.textContent =
+          'No has realizado ninguna búsqueda. Vuelve a intentarlo por ejemplo con "perritos"'
+        divImg.appendChild(aviso)
+      } else {
+        realizarBusqueda(textoBusqueda)
+      }
     }
   })
 
   const header = document.querySelector('header')
   header.appendChild(input)
+
   return input
 }
 
-// Función para mostrar las imágenes que refieren a la búsqueda
+// Función para mostrar las imágenes cuando alguien hace una búsqeda
 export const mostrarImagenes = (imagenes) => {
   const divImg = document.querySelector('#busqueda')
 
@@ -45,5 +59,5 @@ export const mostrarImagenes = (imagenes) => {
   })
 }
 
-// Llamada a la función busqueda para inicializar el campo de búsqueda
+createHeader()
 busqueda()
