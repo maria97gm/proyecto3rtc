@@ -17,8 +17,6 @@ export const createHeader = () => {
       </ul>
     </nav>
   `
-
-  return header
 }
 
 const createNavLink = (text, href) =>
