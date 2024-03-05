@@ -48,13 +48,12 @@
   text-decoration: none;
 }
 
-
-
 #busqueda {
   padding: var(--rtc-padding-l);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 16px; /* Espacio entre las imágenes */
+  gap: 16px;
+  min-height: 1080px;
 }
 
 #busqueda img {
@@ -67,5 +66,3 @@
   box-shadow: 10px 0px 15px 0px rgba(0, 0, 0, 0.75);
   scale: 1.1;
 }
-
-
