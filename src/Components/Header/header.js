@@ -25,14 +25,3 @@ const createNavLink = (text, href) =>
   href === '#'
     ? `<li><a href="${href}">${text}</a></li>`
     : `<li><a href="${href}" target="_blank">${text}</a></li>`
-
-// const createNavLink = (text, href) =>
-//   href === '#'
-//     ? `<li><a href="${href}">${text}</a></li>`
-//     : `<li><a href="${href}" target="_blank">${text}</a></li>`
-
-// if (href === '#') {
-//   return `<li><a href="${href}">${text}</a></li>`
-// } else {
-//
-// }
